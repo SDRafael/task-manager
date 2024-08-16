@@ -1,3 +1,5 @@
+
+# ***atentar-se para responsabilidade única de cada classe***
 class CreateTask:
     def __init__(self, titulo: str, descript: str):
         self.titulo = titulo
@@ -12,7 +14,9 @@ class CreateTask:
 
         }
         self.computarTask(task)
-
+    #
+    # *** Mover a resdponsabilidade de computar task para outra classe ***
+    #
     def computarTask(task):
         taskList = []
         taskList.append(task)
